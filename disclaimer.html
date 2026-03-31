@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Disclaimer | Ultimate Guide to Gucchupani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Disclaimer: This Gucchupani (Robber's Cave) information website is created by Mahsua Technology as a public service initiative. It is not an official government website." />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- Tailwind for card layout -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Font for card -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #f9fafb;
+    }
+
+    /* --- Custom CSS for Header --- */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      transition: all 0.3s ease;
+      background-color: #172554; /* Deep Blue */
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    @media (min-width: 768px) {
+      .topbar {
+        padding: 1rem 3rem;
+      }
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .main-nav {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .main-nav {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+      }
+    }
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .main-nav a:hover {
+      color: #f472b6; /* pink-400 */
+    }
+    .main-nav a.btn-nav {
+      color: #ec4899; /* pink-500 */
+    }
+    .main-nav a.btn-nav:hover {
+      color: #db2777; /* pink-600 */
+    }
+    
+    /* Mobile Menu Toggle */
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    @media (min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+    .chevron::before {
+      content: "\f0c9"; /* FontAwesome bars */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+    .menu-toggle.open .chevron::before {
+      content: "\f00d"; /* FontAwesome times/close */
+    }
+
+    /* Mobile Menu Active State */
+    .main-nav.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #172554;
+      padding: 0;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .main-nav.open a {
+      padding: 1rem 1.5rem;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #1e3a8a;
+    }
+
+    /* --- Custom CSS for Footer Elements --- */
+    .site-footer { 
+      margin-top: 40px; 
+    }
+    .footer-icon {
+      margin-right: 0.25rem;
+    }
+    .footer-sep {
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a href="../index.html" class="brand">
+      <div class="brand-logo text-pink-500 text-2xl mr-2"><i class="fa-solid fa-mountain-sun"></i></div>
+      <div class="brand-text">
+        <span class="brand-title uppercase font-bold tracking-wider">Gucchupani</span>
+        <span class="brand-subtitle text-xs text-gray-500">Robber's Cave, Dehradun</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" onclick="toggleMenu()">
+      <span class="chevron"></span>
+    </button>
+
+    <nav class="main-nav">
+      <a href="../index.html#about">History</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#reach">How to Reach</a>
+      <a href="../index.html#info">Plan Visit</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="https://technology.mahsua.com/pages/donate.html" target="_blank" class="btn-nav text-pink-500 font-bold hover:text-pink-600 transition">❤ Donate</a>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB + LANGUAGE TOGGLE -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner flex justify-between items-center px-4 py-3 max-w-7xl mx-auto">
+      <div class="breadcrumb-left text-sm text-gray-600 space-x-2">
+        <a href="../index.html" id="crumb-home" class="hover:text-pink-500 transition">Home</a>
+        <span>›</span>
+        <span id="crumb-page" class="font-medium text-gray-900">Disclaimer</span>
+      </div>
+      <div class="breadcrumb-right">
+        <div class="lang-toggle flex space-x-2">
+          <button class="lang-btn lang-en active px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-300 font-medium transition" type="button" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn lang-hi px-3 py-1 text-sm rounded hover:bg-gray-200 font-medium transition" type="button" onclick="setLanguage('hi')">हिन्दी</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex flex-col min-h-[70vh]">
+    <section class="container mx-auto px-4 py-12 max-w-4xl">
+      <div class="bg-white rounded-xl shadow-md p-8 md:p-12 border-t-4 border-pink-500">
+
+        <h1 id="disc-heading"
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-100">
+          Disclaimer
+        </h1>
+
+        <div class="space-y-6 text-gray-700 leading-relaxed">
+
+          <p id="disc-p1">
+            This website has been created by
+            <strong class="text-gray-900">
+              <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a>
+            </strong>
+            as a <strong class="text-gray-900">public service initiative</strong> to provide basic information
+            about Gucchupani (Robber's Cave) for the convenience of visitors and the local community.
+          </p>
+
+          <div class="bg-pink-50 border-l-4 border-pink-500 p-4 my-6">
+            <p id="disc-warning" class="font-medium text-pink-900">
+              It is <strong class="text-red-600">not the official website</strong> of any concerned tourism department, trust,
+              organization or government department, nor is it directly associated, endorsed, or authorized by the
+              management or administration of this location.
+            </p>
+          </div>
+
+          <p id="disc-p2">
+            All details such as photos, basic information, timings, directions, and contact information are collected
+            from publicly available sources, local knowledge, or user submissions.
+          </p>
+
+          <p id="disc-p3">
+            While we try to keep the content accurate and updated,
+            <strong class="text-gray-900">
+              <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a>
+              does not guarantee the completeness, accuracy, or official status of any information presented
+            </strong>
+            on this website.
+          </p>
+
+          <p id="disc-p4">
+            If you represent the official administration of any place shown on this website and wish to request
+            changes, corrections, or removal of specific content, please contact us at
+            <a href="mailto:contact@mahsua.com" class="text-blue-600 hover:underline">contact@mahsua.com</a>.
+            We will respond promptly and respectfully.
+          </p>
+
+          <p id="disc-p5">
+            <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a>
+            provides this website <strong class="text-gray-900">free of cost</strong> as a community-support effort.
+          </p>
+
+          <p id="disc-p6">
+            Advertisements displayed on this website (if any) help cover hosting, development, and maintenance
+            expenses. These ads may be <strong class="text-gray-900">served by Google AdSense or other providers</strong>,
+            and <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a>
+            does not endorse any product or service shown through those ads.
+          </p>
+
+          <hr class="my-8 border-gray-200">
+
+          <h3 id="disc-terms-heading" class="text-lg font-bold text-gray-900">Terms of Use</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li id="disc-li1">
+              By using this website, you agree to the terms of this disclaimer.
+            </li>
+            <li id="disc-li2">
+              If you do not agree with any part of this disclaimer, please refrain from using the website.
+            </li>
+            <li id="disc-li3">
+              <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a>
+              reserves the right to modify or update this disclaimer at any time without prior notice.
+              Continued use of the website after changes implies acceptance of the updated terms.
+            </li>
+          </ul>
+
+          <div class="mt-8 p-6 bg-gray-50 rounded-lg text-center">
+            <p id="disc-thanks1" class="mb-2">Thank you for visiting.</p>
+            <p id="disc-thanks2" class="font-medium text-gray-900">
+              We hope you find the information useful and informative.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer bg-blue-950 text-blue-200 py-12 px-6 md:px-12 border-t-4 border-pink-500 mt-10">
+    <div class="footer-inner max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+
+      <div class="footer-links flex space-x-4 mb-4 md:mb-0">
+        <a href="disclaimer.html" class="hover:text-pink-400 transition">
+          <span class="footer-icon">⚖️</span>
+          <span id="footer-disclaimer">Disclaimer</span>
+        </a>
+        <span class="footer-sep text-blue-700">|</span>
+        <a href="https://technology.mahsua.com/pages/donate.html" target="_blank" class="hover:text-pink-400 transition">
+          <span class="footer-icon">💝</span>
+          <span id="footer-donate">Donate</span>
+        </a>
+      </div>
+
+      <div class="footer-meta mb-4 md:mb-0 text-center">
+        <span class="footer-icon">💻</span>
+        <span id="footer-dev-text">
+          Developed by <a href="https://technology.mahsua.com" target="_blank" rel="noopener" class="text-pink-500 hover:text-pink-400 font-semibold transition">Mahsua Technology</a>
+        </span>
+      </div>
+
+      <div class="footer-copy text-blue-400">
+        <span id="footer-copy">© 2026 Gucchupani Tourism Guide</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.main-nav');
+      const menuBtn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('open');
+      menuBtn.classList.toggle('open');
+    }
+
+    const translations = {
+      en: {
+        'crumb-home': 'Home',
+        'crumb-page': 'Disclaimer',
+
+        'disc-heading': 'Disclaimer',
+        'disc-p1': 'This website has been created by <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a></strong> as a <strong class="text-gray-900">public service initiative</strong> to provide basic information about Gucchupani (Robber\'s Cave) for the convenience of visitors and the local community.',
+        'disc-warning': 'It is <strong class="text-red-600">not the official website</strong> of any concerned tourism department, trust, organization or government department, nor is it directly associated, endorsed, or authorized by the management or administration of this location.',
+        'disc-p2': 'All details such as photos, basic information, timings, directions, and contact information are collected from publicly available sources, local knowledge, or user submissions.',
+        'disc-p3': 'While we try to keep the content accurate and updated, <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> does not guarantee the completeness, accuracy, or official status of any information presented</strong> on this website.',
+        'disc-p4': 'If you represent the official administration of any place shown on this website and wish to request changes, corrections, or removal of specific content, please contact us at <a href="mailto:contact@mahsua.com" class="text-blue-600 hover:underline font-medium">contact@mahsua.com</a>. We will respond promptly and respectfully.',
+        'disc-p5': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> provides this website <strong class="text-gray-900">free of cost</strong> as a community-support effort.',
+        'disc-p6': 'Advertisements displayed on this website (if any) help cover hosting, development, and maintenance expenses. These ads may be <strong class="text-gray-900">served by Google AdSense or other providers</strong>, and <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> does not endorse any product or service shown through those ads.',
+
+        'disc-terms-heading': 'Terms of Use',
+        'disc-li1': 'By using this website, you agree to the terms of this disclaimer.',
+        'disc-li2': 'If you do not agree with any part of this disclaimer, please refrain from using the website.',
+        'disc-li3': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> reserves the right to modify or update this disclaimer at any time without prior notice. Continued use of the website after changes implies acceptance of the updated terms.',
+
+        'disc-thanks1': 'Thank you for visiting.',
+        'disc-thanks2': 'We hope you find the information useful and informative.',
+
+        // footer
+        'footer-disclaimer': 'Disclaimer',
+        'footer-donate': 'Donate',
+        'footer-dev-text': 'Developed by <a href="https://technology.mahsua.com" target="_blank" rel="noopener" class="text-pink-500 hover:text-pink-400 font-semibold transition">Mahsua Technology</a>',
+        'footer-copy': '© 2026 Gucchupani Tourism Guide'
+      },
+
+      hi: {
+        'crumb-home': 'मुखपृष्ठ',
+        'crumb-page': 'अस्वीकरण',
+
+        'disc-heading': 'अस्वीकरण',
+        'disc-p1': 'यह वेबसाइट गुच्चूपानी (रॉबर्स केव) के बारे में मूलभूत जानकारी उपलब्ध कराने के लिए एक <strong class="text-gray-900">सार्वजनिक सेवा पहल</strong> के रूप में <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a></strong> द्वारा बनाई गई है, ताकि आगंतुकों और स्थानीय समुदाय को सहायता मिल सके।',
+        'disc-warning': 'यह किसी भी संबंधित पर्यटन विभाग, ट्रस्ट, संगठन या सरकारी विभाग की <strong class="text-red-600">आधिकारिक वेबसाइट नहीं</strong> है, न ही यह इन स्थानों के प्रबंधन या प्रशासन द्वारा सीधे रूप से संचालित, अनुमोदित या अधिकृत है।',
+        'disc-p2': 'यहाँ दी गई सभी जानकारी जैसे फोटो, सामान्य विवरण, समय-सारणी, मार्गदर्शन और संपर्क विवरण सार्वजनिक स्रोतों, स्थानीय जानकारी या उपयोगकर्ता द्वारा भेजी गई सूचनाओं पर आधारित हैं।',
+        'disc-p3': 'हम सामग्री को सही और अद्यतन रखने का प्रयास करते हैं, फिर भी <strong class="text-gray-900"><a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> इस वेबसाइट पर प्रदर्शित किसी भी जानकारी की पूर्णता, शुद्धता या आधिकारिक स्थिति की गारंटी नहीं देता</strong>।',
+        'disc-p4': 'यदि आप किसी भी स्थान के आधिकारिक प्रशासन का प्रतिनिधित्व জরিমানা करते हैं और इस वेबसाइट पर दिखाए गए किसी भाग में परिवर्तन, संशोधन या हटाने का अनुरोध करना चाहते हैं, तो कृपया हमसे <a href="mailto:contact@mahsua.com" class="text-blue-600 hover:underline font-medium">contact@mahsua.com</a> पर संपर्क करें। हम यथाशीघ्र और सम्मानपूर्वक कार्यवाही करेंगे।',
+        'disc-p5': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> यह वेबसाइट समुदाय की सेवा के रूप में पूर्णतः <strong class="text-gray-900">निःशुल्क</strong> प्रदान करता है।',
+        'disc-p6': 'इस वेबसाइट पर प्रदर्शित विज्ञापन (यदि हों) होस्टिंग, विकास और रखरखाव जैसे खर्चों को वहन करने में मदद करते हैं। ये विज्ञापन <strong class="text-gray-900">Google AdSense या अन्य प्रदाताओं</strong> द्वारा दिखाए जा सकते हैं, और <a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> उन विज्ञापनों में दिखाए गए किसी भी उत्पाद या सेवा का समर्थन नहीं करता।',
+
+        'disc-terms-heading': 'उपयोग की शर्तें',
+        'disc-li1': 'इस वेबसाइट का उपयोग करते समय आप इस अस्वीकरण की शर्तों से सहमत होते हैं।',
+        'disc-li2': 'यदि आप इस अस्वीकरण के किसी भी भाग से सहमत नहीं हैं, तो कृपया इस वेबसाइट का उपयोग न करें।',
+        'disc-li3': '<a href="https://technology.mahsua.com/" target="_blank" rel="noopener" class="hover:text-pink-500 transition">Mahsua Technology</a> बिना पूर्व सूचना के किसी भी समय इस अस्वीकरण में परिवर्तन या अद्यतन करने का अधिकार रखता है। परिवर्तन के बाद भी वेबसाइट का निरंतर उपयोग अद्यतन शर्तों की स्वीकृति मानी जाएगी।',
+
+        'disc-thanks1': 'आपके आगमन के लिए धन्यवाद।',
+        'disc-thanks2': 'आशा है कि यह जानकारी आपके लिए उपयोगी और ज्ञानवर्धक सिद्ध होगी।',
+
+        // footer
+        'footer-disclaimer': 'अस्वीकरण',
+        'footer-donate': 'दान',
+        'footer-dev-text': '<a href="https://technology.mahsua.com" target="_blank" rel="noopener" class="text-pink-500 hover:text-pink-400 font-semibold transition">Mahsua Technology</a> द्वारा विकसित',
+        'footer-copy': '© 2026 गुच्चूपानी पर्यटन गाइड'
+      }
+    };
+
+    function setLanguage(lang) {
+      const set = translations[lang];
+      if (!set) return;
+
+      Object.keys(set).forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = set[id];
+      });
+
+      document.documentElement.lang = lang === 'hi' ? 'hi' : 'en';
+
+      document.querySelector('.lang-en').classList.toggle('bg-gray-200', lang === 'en');
+      document.querySelector('.lang-hi').classList.toggle('bg-gray-200', lang === 'hi');
+      
+      // Update active state visual
+      if(lang === 'en') {
+          document.querySelector('.lang-en').style.backgroundColor = '#e5e7eb';
+          document.querySelector('.lang-hi').style.backgroundColor = 'transparent';
+      } else {
+          document.querySelector('.lang-hi').style.backgroundColor = '#e5e7eb';
+          document.querySelector('.lang-en').style.backgroundColor = 'transparent';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => setLanguage('en'));
+  </script>
+</body>
+</html>
